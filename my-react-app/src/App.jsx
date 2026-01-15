@@ -4,38 +4,20 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Footer from './Machuluvi/Footer'
 import Header from './Machuluvi/Header'
+import Hook from './Machuluvi/Hook'
 
 function App() {
   return (
     <>
-    <h1>hhhh</h1>
-    <Footer/>
+    <h1>Hello! Inam</h1>
+    <Footer />
     <Header />
-<MachuluviHeader />
+    <Hook />
+{/* <MachuluviHeader /> */}
     </>
   )
 }
 
-
-import { useState } from 'react';
-
-function App() {
-  const [car, setCar] = useState({
-    brand: "Ford",
-    model: "Mustang",
-    year: "1964",
-    color: "red"
-  });
-
-  return (
-    <>
-      <h1>My {car.brand}</h1>
-      <p>
-        It is a {car.color} {car.model} from {car.year}.
-      </p>
-    </>
-  );
-}
 
 
 export default App

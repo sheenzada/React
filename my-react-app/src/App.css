@@ -3,4 +3,44 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: aqua;
+  font-family: 'Times New Roman', Times, serif;
+}
+button{
+  background-color: green;
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+}
+#hp{
+  border: 1px solid black;
+  width: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  position: relative;
+  /* left: 400px; */
+  border-radius: 10px;
+  background-color: gray;
+  color: #fff;
+  animation-name: spin;
+  animation-duration: 6s ;
+}
+#taju{
+  background-color: #ff7200;
+  width: 20%;
+  height: 100%;
+  padding: 10vh;
+  position: relative;
+  left: 350px;
+}
+@keyframes spin{
+  0%   {background-color:red; left:-50px; top:-50px;}
+  25%  {background-color:yellow; left:100px; top:0px;}
+  50%  {background-color:blue; left:100px; top:80px;}
+  75%  {background-color:green; left:0px; top:80px;}
+  100% {background-color:red; left:0px; top:80px;}
 }
