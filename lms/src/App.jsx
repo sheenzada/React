@@ -46,12 +46,26 @@ import React from 'react'
 
 // export default App
 
-
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import Card from './Card';
+
+
+  
 
 function App() {
   return (
     <h1 className="text-red-600 text-4xl">Tailwind Working
+
+    <div className="bg-gray-900 text-white">
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
 
     <div className="min-h-screen bg-blue-600 p-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 bg-green-400 gap-6">
@@ -78,6 +92,7 @@ function App() {
         />
         
       </div>
+    </div>
     </div>
     </h1>
   );
