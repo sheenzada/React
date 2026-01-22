@@ -3,7 +3,7 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center text-center px-6">
       <div>
         <h1 className="text-4xl md:text-6xl font-bold">
-          Hi, I'm <span className="text-blue-500">Your Name</span>
+          Hi, I'm <span className="text-blue-500">Inam Ullah</span>
         </h1>
         <p className="mt-4 text-gray-400 max-w-xl mx-auto">
           Frontend Developer | React & Tailwind CSS

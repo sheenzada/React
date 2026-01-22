@@ -46,38 +46,34 @@ import React from 'react'
 
 // export default App
 
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Card from './Card';
-
-
-  
+import About from "./Component/About";
+import Contact from "./Component/Contact";
+import Hero from './Component/Hero';
+import Navbar from './Component/Navbar';
+import Projects from './Component/Projects';
 
 function App() {
   return (
     <h1 className="text-red-600 text-4xl">Tailwind Working
 
     <div className="bg-gray-900 text-white">
-      <Navbar />
-      <Hero />
-      <About />
-      <Projects />
       <Contact />
+      <About />
+      <Hero />
+      <Navbar />
+      <Projects />
 
     <div className="min-h-screen bg-blue-600 p-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 bg-green-400 gap-6">
         
-        <Card
+        {/* <Card
           title="Responsive Card"
           description="This card is fully responsive using Tailwind CSS."
           image="https://via.placeholder.com/400x200"
           buttonText="Read More"
-        />
+        /> */}
 
-        <Card
+        {/* <Card
           title="React + Tailwind"
           description="Reusable card component in React JSX."
           image="https://via.placeholder.com/400x200 "
@@ -89,7 +85,7 @@ function App() {
           description="Clean, fast, and mobile-friendly design."
           image="https://via.placeholder.com/400x200"
           buttonText="Learn More"
-        />
+        /> */}
         
       </div>
     </div>
