@@ -4,6 +4,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between">
         <h1 className="text-xl font-bold text-blue-500">MyPortfolio</h1>
         <div className="space-x-6 hidden md:block">
+          <a href="#home" className="hover:text-blue-400">Home</a>
           <a href="#about" className="hover:text-blue-400">About</a>
           <a href="#projects" className="hover:text-blue-400">Projects</a>
           <a href="#contact" className="hover:text-blue-400">Contact</a>

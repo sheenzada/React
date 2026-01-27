@@ -1,8 +1,7 @@
 import { useState } from "react";
 
-
-const Contact = () => {
-  const [ formData, setFormData]=
+const  RegistrationForm = () => {
+    const [ formData, setFormData]=
     useState({
         name:"",
         email:"",
@@ -22,24 +21,13 @@ const Contact = () => {
         e.preventDefault();
         console.log(formData);
     };
-  return (
-    
-    <section id="contact" className="py-20 bg-gray-800">
-      <div className="max-w-xl mx-auto text-center px-6">
-        <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
-        <p className="text-gray-400 mb-6">
-          Email: sheenzada7@gmail.com
-        </p>
-        <button className="px-6 py-3 bg-blue-600 rounded-lg hover:bg-blue-700">
-          Say Hello
-        </button>
-        
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+    return (
+        <div className="min-h-screen flex items-center justify-center bg-gray-100">
             <form
             onSubmit={handleChange}
             className="bg-white p-8 rounded-xl shadow-lg w-full max-w-md"
             >
-                <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6 w-full bg-blue-600 text-black py-2 rounded-lg font-medium hover:bg-blue-700 transition duration-300">Registration Form</h2>
+                <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6 w-full bg-blue-600 text- py-2 rounded-lg font-medium hover:bg-blue-700 transition duration-300">Registration Form</h2>
             {/* {Name} */}
                 <div className="mb-4">
                     <label className="block text-gray-700 mb-1">Name</label>
@@ -67,14 +55,7 @@ const Contact = () => {
                 {/* {Button} */}
                 <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition duration-300">Register</button>
             </form>
-      </div>
         </div>
-    </section>
-  );
-};
-
-export default Contact;
-
-
-
-
+    );
+}
+export default RegistrationForm;
