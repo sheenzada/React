@@ -20,7 +20,7 @@ function App () {
   return (
 
     <>
-  <CartProvider>
+  {/* <CartProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -28,9 +28,9 @@ function App () {
         <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </BrowserRouter>
-  </CartProvider> 
+  </CartProvider> */}
 
-     <CartContext/>
+    {/* <CartContext/> */}
     <Navbar/>
     <Hero/>
     <About/>
