@@ -1,13 +1,19 @@
 const Hero = () => {
   return (
     <>
+<div >
+  
+  <img
+  src="src/assets/img/inam.jpg"
+  className="w-32 h-32 rounded-full object-cover border-4 border-yellow-200 shadow-lg mx-auto mt-12"
+/>
 
-    <section className="min-h-screen flex items-center justify-center text-center px-6 rounded-5xl">
-          <img src="src/assets/img/inam.jpg" alt="" className="h-50 w-36 start-3.5 border-r-green-500 shadow-stone-500 rounded-tl-3xl mr-40 " />
+    </div>
+    <section className="min-h-screen flex items-center justify-center text-center px-6 ">
 
       <div>
 
-        <h1 className="text-4xl md:text-6xl font-bold">
+        <h1 className="text-4xl md:text-6xl font-bold ">
 
           Hi, I'm <span className="text-blue-500">Inam Ullah</span>
 
