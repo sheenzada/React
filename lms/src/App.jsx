@@ -12,25 +12,13 @@ import Navbars from './Portfolio/Navbars';
 import Abouts from './Portfolio/Abouts';
 import Project from './Portfolio/Project';
 import Contacts from './Portfolio/Contacts';
-import CartContext, { CartProvider } from './context/CartContext';
-import { Check } from 'lucide-react';
-import Checkout from './Pages/Checkout';
+import TodoList from './Todo/TodoList';
+
 
 function App () {
   return (
 
     <>
-  {/* <CartProvider>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/checkout" element={<Checkout />} />
-      </Routes>
-    </BrowserRouter>
-  </CartProvider> */}
-
-    {/* <CartContext/> */}
     <Navbar/>
     <Hero/>
     <About/>
@@ -46,6 +34,7 @@ function App () {
     <Abouts/>
     <Project/>
     <Contacts/>
+    <TodoList/>
     {/* <MetaForm/> */}
     </>
   )

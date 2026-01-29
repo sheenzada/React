@@ -2,8 +2,8 @@ const Hero = () => {
   return (
     <>
 
-    <section className="min-h-screen flex items-center justify-center text-center px-6">
-          <img src="src/assets/img/inam.jpg" alt="" className="h-50 w-36 start-3.5 border-r-green-500 shadow-stone-500 rounded-lg " />
+    <section className="min-h-screen flex items-center justify-center text-center px-6 rounded-5xl">
+          <img src="src/assets/img/inam.jpg" alt="" className="h-50 w-36 start-3.5 border-r-green-500 shadow-stone-500 rounded-tl-3xl mr-40 " />
 
       <div>
 
@@ -15,7 +15,7 @@ const Hero = () => {
         <p className="mt-4 text-gray-400 max-w-xl mx-auto">
           Frontend Developer | React & Tailwind CSS
         </p>
-        <button className="mt-6 px-6 py-3 bg-blue-600 rounded-lg hover:bg-blue-700">
+        <button className="mt-6 px-6 py-3 bg-green-500 rounded-lg hover:bg-blue-700 border-collapse">
           View My Work
         </button>
       </div>
