@@ -57,14 +57,14 @@ const Hero = () => {
         <img
           src="src/assets/img/inam-2.jpg"
           alt="Inam Ullah"
-          className="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-green-200 shadow-xl mx-auto"
+          className="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-green-300 shadow-sm mx-auto"
         />
       </div>
 
       {/* Text Section */}
       <div className="text-center md:text-left max-w-xl">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          Hi, I'm <span className="text-green-500">Inam Ullah</span>
+          Hi, <span className="text-gray-700"> I'm</span>  <span className="text-green-500">Inam Ullah</span>
         </h1>
         <p className="text-black mb-6">
           Frontend Developer | React & Tailwind CSS | UI/UX Enthusiast
@@ -72,7 +72,7 @@ const Hero = () => {
         <div>
           <a
             href="#projects"
-            className="inline-block px-6 py-3 bg-yellow-300 text-gray-900 font-semibold rounded-lg shadow-lg hover:bg-orange-600 transition-all"
+            className="inline-block px-6 py-3 bg-green-400 text-gray-900 font-semibold rounded-lg shadow-lg hover:bg-white transition-all"
           >
             View My Work
           </a>

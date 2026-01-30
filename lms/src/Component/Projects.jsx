@@ -70,6 +70,20 @@ const projects = [
     demo: "#",
     code: "https://github.com/inamullah/social",
   },
+  {
+    title: "Responsive Website",
+    tech: ["Html", "Css" , "Bootstrap"],
+    img: "src/assets/img/ali-sedigh-moghadam-aBQxGp0l6C8-unsplash.jpg",
+    demo: "#",
+    code: "https://github.com/yourusername",
+  },
+  {
+    title: "Website Developer & Designer",
+    tech: ["JavaScript", "Mongodb" , "Node.js"],
+    img: "src/assets/img/about.jpg",
+    demo: "#",
+    code: "https://github.com/yourusername",
+  },
 ];
 
 const Projects = () => {
