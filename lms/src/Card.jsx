@@ -1,11 +1,11 @@
 const Card = () => {
   return (
   
-    <div className="max-w-sm bg-white rounded-xl shadow-lg overflow-hidden mt-11 ml-12 ">
+    <div className="max-w-sm bg-white rounded-xl shadow-lg overflow-hidden mt-11 ml-12 flex ">
       <img
         src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
         alt="Card"
-        className="w-full h-48 object-cover "
+        className="w-full h-48 object-cover gap-36 "
       />
 
       <div className="p-5">
