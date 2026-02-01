@@ -21,7 +21,7 @@ function App () {
   return (
 
     <>
-    <Mportfolio/>
+    {/* <Mportfolio/> */}
     <Navbar/>
     <Hero/>
     <About/>
