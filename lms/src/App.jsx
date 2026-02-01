@@ -13,17 +13,22 @@ import Abouts from './Portfolio/Abouts';
 import Project from './Portfolio/Project';
 import Contacts from './Portfolio/Contacts';
 import TodoList from './Todo/TodoList';
-import BestPortfolio from './Portfolio/BestPortfolio'
+import Hook from './Hook/Hook'
+import Footer from './Portfolio/Footer'
+import Mportfolio from './Portfolio/Mportfolio'
+
 function App () {
   return (
 
     <>
-    {/* <BestPortfolio/> */}
+    <Mportfolio/>
     <Navbar/>
     <Hero/>
     <About/>
+    <Hook/>
     <Projects/>
     <Contact/>
+    <Footer/>
     {/* <MetaForm/> */}
 
     {/* <Loginform/> */}

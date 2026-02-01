@@ -5,7 +5,7 @@ const Card = () => {
 
       <div className="p-5 ">
          <img
-        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+        src="src/assets/img/like-heart-round-line-icon.png"
         alt="Card"
         className="w-full h-48 object-cover "
       />
