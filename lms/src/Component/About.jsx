@@ -38,7 +38,7 @@ const About = () => {
           <img
             src="src/assets/img/saling.jpg"
             alt="Inam Ullah"
-            className="w-48 h-48 rounded-full border-4 border-green-400 shadow-xl mx-auto md:mx-0"
+            className="w-48 h-48 rounded-full border-4 border-green-400 shadow-xl mx-auto md:mx-0 "
           />
         </div>
 
@@ -55,7 +55,7 @@ const About = () => {
           </p>
 
           {/* Skills */}
-          <h3 className="text-2xl font-semibold mb-4">Skills & Technologies</h3>
+          <h3 className="text-2xl font-semibold mb-4">SKILLS</h3>
           <div className="grid grid-cols-3 md:grid-cols-3 gap-4 max-w-md mx-auto md:mx-0">
             {skills.map((skill, i) => (
               <div

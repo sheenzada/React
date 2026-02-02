@@ -7,7 +7,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600 text-white px-6">
+    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600 to-yellow-200 text-white px-6">
       
       {/* Profile Image */}
       <div className="mb-8 md:mb-0 md:mr-12">
