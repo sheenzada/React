@@ -21,7 +21,7 @@ function App () {
   return (
 
     <>
-    <Keyframe/>
+    {/* <Keyframe/> */}
     {/* <Mportfolio/> */}
     <Navbar/>
     <Hero/>
@@ -36,11 +36,11 @@ function App () {
     
     <Card />
     {/* <Loginform/> */}
-    <Navbars/>
+    {/* <Navbars/>
     <Abouts/>
     <Project/>
-    <Contacts/>
-    <TodoList/>
+    <Contacts/> */}
+    {/* <TodoList/> */}
     {/* <MetaForm/> */}
     </>
   )

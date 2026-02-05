@@ -1,4 +1,6 @@
+import { useState } from "react";
 const Navbar = () => {
+    const[open , setOpen] = useState(false);
   return (
     <nav className="fixed w-full bg-gray-900/80 backdrop-blur border-b border-gray-700 z-50">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between">
@@ -9,7 +11,25 @@ const Navbar = () => {
           <a href="#projects" className="hover:text-red-400">Projects</a>
           <a href="#contact" className="hover:text-yellow-400">Contact</a>
         </div>
+
+        <button
+      onClick={() => setOpen (!open)}
+      className="md:hidden text-2xl text-white"
+      >
+        ❤
+      </button>
+
+      {open && (
+        <ul className="md:hidden bg-white px-6 pb-4 space-y-3 font-medium">
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+      )}
       </div>
+
+      
     </nav>
   );
 };
