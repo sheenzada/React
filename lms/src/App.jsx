@@ -17,6 +17,8 @@ import Hook from './Hook/Hook'
 import Footer from './Portfolio/Footer'
 import Mportfolio from './Portfolio/Mportfolio'
 import Keyframe from './Gemni/Keyframe'
+
+import Footers from './Component/Footers'
 function App () {
   return (
 
@@ -26,15 +28,16 @@ function App () {
     <Navbar/>
     <Hero/>
     <About/>
-    <Hook/>
+    {/* <Hook/> */}
     <Projects/>
     <Contact/>
-    <Footer/>
+    <Footers/>
+    {/* <Footer/> */}
     {/* <MetaForm/> */}
 
     {/* <Loginform/> */}
     
-    <Card />
+    {/* <Card /> */}
     {/* <Loginform/> */}
     {/* <Navbars/>
     <Abouts/>
