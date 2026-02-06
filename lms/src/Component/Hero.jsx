@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-gray-400 via-gray-500  to-gray-200 text-white px-6">
+    <section id="home" className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-gray-900 via-gray-900  to-gray-950 text-white px-6">
       
       {/* Profile Image */}
       <div className="mb-8 md:mb-0 md:mr-12">
@@ -17,11 +17,11 @@ const Hero = () => {
       {/* Text Section */}
       <div className="text-center md:text-left max-w-xl">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          Hi, <span className="text-gray-700">I'm</span>{" "}
+          Hi, <span className="text-yellow-100">I'm</span>{" "}
           <span className="text-green-500">Inam Ullah</span>
         </h1>
 
-        <p className="text-black mb-6">
+        <p className="text-white mb-6">
           Frontend Developer | React & Tailwind CSS | UI/UX Enthusiast
         </p>
 
