@@ -144,8 +144,13 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black flex items-center justify-center px-4">
-      <div className="w-full max-w-4xl grid md:grid-cols-2 gap-8 bg-white/90 backdrop-blur-lg p-8 rounded-2xl shadow-2xl">
+    // <section id="contact" className="min-h-screen  bg-gradient-to-br from-gray-900 via-gray-800 to-black flex items-center justify-center px-4">
+     <section
+  id="contact"
+  className="py-16 bg-gradient-to-br from-gray-900 via-gray-800 to-black flex items-center justify-center px-4"
+>
+
+     <div className="w-full h-96 max-w-4xl grid md:grid-cols-2 gap-8 bg-white/90 backdrop-blur-lg p-8 rounded-2xl shadow-2xl">
         
         {/* LEFT CONTENT */}
         <div className="flex flex-col justify-center">
