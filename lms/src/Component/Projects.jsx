@@ -52,14 +52,14 @@ const projects = [
   {
     title: "E-commerce UI",
     tech: ["React", "API", "Tailwind"],
-    img: "src/assets/img/istockphoto-1061329208-612x612.webp",
+    img: "src/assets/img/7337547.jpg",
     demo: "#",
     // code: "https://github.com/inamullah/ecommerce",
   },
   {
     title: "Dashboard App",
     tech: ["React", "Charts.js", "Tailwind"],
-    img: "src/assets/img/istockphoto-1249734165-612x612.webp",
+    img: "src/assets/img/istockphoto-1387134070-612x612.webp",
     demo: "#",
     // code: "https://github.com/inamullah/dashboard",
   },
@@ -73,14 +73,14 @@ const projects = [
   {
     title: "Responsive Website",
     tech: ["Html", "Css" , "Bootstrap"],
-    img: "src/assets/img/ali-sedigh-moghadam-aBQxGp0l6C8-unsplash.jpg",
+    img: "src/assets/img/pexels-luis-gomes-166706-546819.jpg",
     demo: "#",
     // code: "https://github.com/yourusername",
   },
   {
     title: "Website Developer & Designer",
     tech: ["JavaScript", "Mongodb" , "Node.js"],
-    img: "src/assets/img/about.jpg",
+    img: "src/assets/img/istockphoto-1061329208-612x612.webp",
     demo: "#",
     // code: "https://github.com/yourusername",
   },
