@@ -3,24 +3,24 @@ export default function Footer() {
     <footer className="border-t border-gray-800 bg-gray-950">
       <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-sm text-gray-500">
-          © {new Date().getFullYear()} Your Name. All rights reserved.
+          © {new Date().getFullYear()} Inam Ullah. All rights reserved.
         </p>
 
         <div className="flex gap-6 text-gray-400">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/sheenzada"
             className="hover:text-indigo-400 transition"
           >
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/feed/"
             className="hover:text-indigo-400 transition"
           >
             LinkedIn
           </a>
           <a
-            href="mailto:you@email.com"
+            href="sheenzada7@gmail.com"
             className="hover:text-indigo-400 transition"
           >
             Email
