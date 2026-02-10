@@ -21,7 +21,7 @@ const Hero = () => {
           <span className="text-green-500">Inam Ullah</span>
         </h1>
 
-        <p className="text-white mb-6">
+        <p className="text-white mb-6 font-serif ">
           Frontend Developer | React & Tailwind CSS | UI/UX Enthusiast
         </p>
 

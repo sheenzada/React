@@ -110,7 +110,7 @@ const About = () => {
           <img
             src="src/assets/img/saling.jpg"
             alt="Inam Ullah"
-            className="w-48 h-48 rounded-full border-4 border-green-400 shadow-xl mx-auto md:mx-0"
+            className="w-48 h-48 rounded-full border-4 border-green-400 shadow-xl mx-auto md:mx-0  animate-colorRotate saturate-150 contrast-125"
           />
         </div>
 
