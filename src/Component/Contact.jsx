@@ -1,0 +1,356 @@
+
+
+// import { useState } from "react";
+// import { FaGithub, FaLinkedin, FaBriefcase  } from "react-icons/fa";
+// import { VscCallOutgoing } from "react-icons/vsc";
+// const Contact = () => {
+//   const [formData, setFormData] = useState({
+//     name: "",
+//     email: "",
+//     password: "",
+//   });
+
+//   const [error, setError] = useState("");
+//   const [success, setSuccess] = useState("");
+//   const [loading, setLoading] = useState(false);
+
+//   const handleChange = (e) => {
+//     const { name, value } = e.target;
+//     setFormData({ ...formData, [name]: value });
+//   };
+
+//   const validateForm = () => {
+//     if (!formData.name) return "Name is required";
+//     if (!formData.email) return "Email is required";
+//     if (!formData.password) return "Password is required";
+//     if (formData.password.length < 6)
+//       return "Password must be at least 6 characters";
+//     return "";
+//   };
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+
+//     const validationError = validateForm();
+//     if (validationError) {
+//       setError(validationError);
+//       setSuccess("");
+//       return;
+//     }
+
+//     setLoading(true);
+//     setError("");
+
+//     setTimeout(() => {
+//       console.log("Form Data:", formData);
+//       setSuccess("Thanks for reaching out 🚀");
+//       setLoading(false);
+//       setFormData({ name: "", email: "", password: "" });
+//     }, 1500);
+//   };
+
+//   return (
+//     <section
+//       id="contact"
+//       className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black flex items-center justify-center px-4"
+//     >
+//       <div className="w-full max-w-4xl grid md:grid-cols-2 gap-8 bg-white/90 backdrop-blur-lg p-6 md:p-8 rounded-2xl shadow-2xl">
+        
+//         {/* LEFT CONTENT */}
+//         <div className="flex flex-col justify-center">
+//           <h2 className="text-4xl font-bold text-gray-800 mb-2">
+//             Let’s Work Together
+//           </h2>
+//           <p className="text-gray-600 mb-6">
+//             I’m open for freelance projects, collaborations, and full-time
+//             opportunities.
+//           </p>
+
+//           <p className="text-gray-700 mb-4">
+//             📧 <span className="font-semibold">sheenzada7@gmail.com</span>
+//           </p>
+//           <p className="text-gray-700 mb-4">
+//             <span className="font-semibold">Phone No: 03555218658</span>
+//           </p>
+
+//           {/* SOCIAL LINKS */}
+//           <div className="flex gap-4 mt-4 flex-wrap">
+//             <a
+//               href="https://github.com/sheenzada"
+//               target="_blank"
+//               rel="noreferrer"
+//               className="p-3 bg-gray-900 text-white rounded-full hover:scale-110 transition"
+//             >
+//               <FaGithub size={20} />
+//             </a>
+
+//             <a
+//               href="https://linkedin.com/in/yourusername"
+//               target="_blank"
+//               rel="noreferrer"
+//               className="p-3 bg-blue-600 text-white rounded-full hover:scale-110 transition"
+//             >
+//               <FaLinkedin size={20} />
+//             </a>
+
+//             <a
+//               href="https://www.fiverr.com/sheenzada1_0_6/buying?source=avatar_menu_profile"
+//               target="_blank"
+//               rel="noreferrer"
+//               className="p-3 bg-green-600 text-white rounded-full hover:scale-110 transition"
+//             >
+//               <FaBriefcase size={20} />
+//             </a>
+//           </div>
+//         </div>
+
+//         {/* RIGHT FORM */}
+//         <div>
+//           <h3 className="text-2xl font-bold text-gray-800 mb-4">
+//             Register / Contact
+//           </h3>
+
+//           {error && (
+//             <p className="mb-3 text-sm text-red-600 bg-red-100 p-2 rounded">
+//               {error}
+//             </p>
+//           )}
+
+//           {success && (
+//             <p className="mb-3 text-sm text-green-600 bg-green-100 p-2 rounded">
+//               {success}
+//             </p>
+//           )}
+
+//           <form onSubmit={handleSubmit} className="space-y-4">
+//             <input
+//               type="text"
+//               name="name"
+//               placeholder="Your Name"
+//               value={formData.name}
+//               onChange={handleChange}
+//               className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+//             />
+
+//             <input
+//               type="email"
+//               name="email"
+//               placeholder="Email Address"
+//               value={formData.email}
+//               onChange={handleChange}
+//               className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+//             />
+
+//             <input
+//               type="password"
+//               name="password"
+//               placeholder="Password"
+//               value={formData.password}
+//               onChange={handleChange}
+//               className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+//             />
+
+//             <button
+//               type="submit"
+//               disabled={loading}
+//               className="w-full py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition disabled:opacity-60"
+//             >
+//               {loading ? "Sending..." : "Submit"}
+//             </button>
+//           </form>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Contact;
+
+
+import { useState } from "react";
+import { FaGithub, FaLinkedin, FaBriefcase } from "react-icons/fa";
+import { MdEmail, MdPhone } from "react-icons/md";
+
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const validateForm = () => {
+    if (!formData.name) return "Name is required";
+    if (!formData.email) return "Email is required";
+    if (!formData.password) return "Password is required";
+    if (formData.password.length < 6)
+      return "Password must be at least 6 characters";
+    return "";
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const validationError = validateForm();
+    if (validationError) {
+      setError(validationError);
+      setSuccess("");
+      return;
+    }
+
+    setLoading(true);
+    setError("");
+
+    setTimeout(() => {
+      console.log("Form Data:", formData);
+      setSuccess("Thanks for reaching out 🚀");
+      setLoading(false);
+      setFormData({ name: "", email: "", password: "" });
+    }, 1500);
+  };
+
+  return (
+    <section
+      id="contact"
+      className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black flex items-center justify-center px-4"
+    >
+      <div className="w-full max-w-4xl grid md:grid-cols-2 gap-8 bg-white/90 backdrop-blur-lg p-6 md:p-8 rounded-2xl shadow-2xl">
+        
+        {/* LEFT CONTENT */}
+        <div className="flex flex-col justify-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">
+            Let’s Work Together
+          </h2>
+
+          <p className="text-gray-600 mb-6 text-sm sm:text-base">
+            I’m open for freelance projects, collaborations, and full-time
+            opportunities.
+          </p>
+
+          {/* EMAIL & PHONE */}
+          <div className="space-y-4">
+            <a
+              href="mailto:sheenzada7@gmail.com"
+              className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition text-sm sm:text-base"
+            >
+              <span className="p-2 bg-blue-100 text-blue-600 rounded-full">
+                <MdEmail size={20} />
+              </span>
+              <span className="font-semibold break-all">
+                sheenzada7@gmail.com
+              </span>
+            </a>
+
+            <a
+              href="tel:03555218658"
+              className="flex items-center gap-3 text-gray-700 hover:text-green-600 transition text-sm sm:text-base"
+            >
+              <span className="p-2 bg-green-100 text-green-600 rounded-full">
+                <MdPhone size={20} />
+              </span>
+              <span className="font-semibold">
+                0355-5218658
+              </span>
+            </a>
+          </div>
+
+          {/* SOCIAL LINKS */}
+          <div className="flex gap-4 mt-6 flex-wrap">
+            <a
+              href="https://github.com/sheenzada"
+              target="_blank"
+              rel="noreferrer"
+              className="p-3 bg-gray-900 text-white rounded-full hover:scale-110 transition"
+            >
+              <FaGithub size={20} />
+            </a>
+
+            <a
+              href="https://linkedin.com/in/yourusername"
+              target="_blank"
+              rel="noreferrer"
+              className="p-3 bg-blue-600 text-white rounded-full hover:scale-110 transition"
+            >
+              <FaLinkedin size={20} />
+            </a>
+
+            <a
+              href="https://www.fiverr.com/sheenzada1_0_6/buying?source=avatar_menu_profile"
+              target="_blank"
+              rel="noreferrer"
+              className="p-3 bg-green-600 text-white rounded-full hover:scale-110 transition"
+            >
+              <FaBriefcase size={20} />
+            </a>
+          </div>
+        </div>
+
+        {/* RIGHT FORM */}
+        <div>
+          <h3 className="text-2xl font-bold text-gray-800 mb-4">
+            Register / Contact
+          </h3>
+
+          {error && (
+            <p className="mb-3 text-sm text-red-600 bg-red-100 p-2 rounded">
+              {error}
+            </p>
+          )}
+
+          {success && (
+            <p className="mb-3 text-sm text-green-600 bg-green-100 p-2 rounded">
+              {success}
+            </p>
+          )}
+
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+            />
+
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              value={formData.password}
+              onChange={handleChange}
+              className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+            />
+
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition disabled:opacity-60"
+            >
+              {loading ? "Sending..." : "Submit"}
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
