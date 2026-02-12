@@ -1,20 +1,23 @@
 
 
 import { useState } from "react";
+import { href } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const links = [
+    
     { name: "Home", href: "#home", color: "hover:text-white" },
     { name: "About", href: "#about", color: "hover:text-blue-400" },
+    {name: "Service" , href: "#service", color:"hover:text-white"},
     { name: "Projects", href: "#projects", color: "hover:text-red-400" },
     { name: "Contact", href: "#contact", color: "hover:text-yellow-400" },
     
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-gray-900/80 backdrop-blur border-b border-gray-700 z-50">
+    <nav id="Service" className="fixed top-0 w-full bg-gray-900/80 backdrop-blur border-b border-gray-700 z-50">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <h1 className="text-xl font-bold text-blue-500">
