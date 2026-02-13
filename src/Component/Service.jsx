@@ -20,7 +20,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="relative bg-[#0b0f19] text-white py-28 px-6 overflow-hidden">
+    <section id="service" className="relative bg-[#0b0f19] text-white py-28 px-6 overflow-hidden">
       
       {/* Gradient Mesh Background */}
       <div className="absolute top-[-200px] left-[-200px] w-[500px] h-[500px] bg-purple-600 opacity-20 blur-[150px] rounded-full"></div>
@@ -38,7 +38,7 @@ export default function Services() {
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
             What I <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">Offer</span>
           </h2>
-          <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
+          <p className="text-gray-400 font-bold mt-6 max-w-2xl mx-auto">
             I craft immersive digital experiences that merge design, technology,
             and strategy into powerful results.
           </p>

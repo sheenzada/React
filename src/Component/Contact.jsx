@@ -56,8 +56,7 @@ const Contact = () => {
       id="contact"
       className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black flex items-center justify-center px-4"
     >
-      <div className="w-full max-w-4xl grid md:grid-cols-2 gap-8 bg-gray-500 backdrop-blur-lg p-6 md:p-8 rounded-2xl shadow-2xl">
-        
+              <div className="w-full max-w-4xl grid md:grid-cols-2 gap-8 bg-white backdrop-blur-lg p-6 md:p-8 rounded-2xl shadow-2xl">
         {/* LEFT CONTENT */}
         <div className="flex flex-col justify-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">
